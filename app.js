@@ -78,7 +78,7 @@ app.post("/remove", upload.single("image_file"), (req, res) => {
       fs.writeFileSync(outputPath, response.data);
 
       // Send the URL of the image back to the client
-      res.send(`http://localhost:5000/no-bg-${originalFileName}.png`);
+      res.send(`https://removebgapiscarface68.onrender.com/no-bg-${originalFileName}.png`);
     })
     .catch((error) => {
       return console.error("Request failed:", error);
